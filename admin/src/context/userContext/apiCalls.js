@@ -19,7 +19,7 @@ import {
     try {
       const res = await axios.get("/users", {
         headers: {
-            token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDkyNzQ3MCwiZXhwIjoxNjgxMzU5NDcwfQ.v96uu-IDsFgAaJj8ehgxkiInna4mjE0RE4VCwfbA3nU",
+            authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MTA5NzExMywiZXhwIjoxNjgxNTI5MTEzfQ.EUhy3zBUmzQbWjEFsUMpFFbv3myFHp7im00nSIdiuDY",
         },
       });
       console.log(res.data);
@@ -45,7 +45,7 @@ import {
         },
         {
             headers: {
-                token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDkyNzQ3MCwiZXhwIjoxNjgxMzU5NDcwfQ.v96uu-IDsFgAaJj8ehgxkiInna4mjE0RE4VCwfbA3nU",
+                authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MTA5NzExMywiZXhwIjoxNjgxNTI5MTEzfQ.EUhy3zBUmzQbWjEFsUMpFFbv3myFHp7im00nSIdiuDY",
             },
         }
       );
@@ -60,7 +60,7 @@ import {
     try {
       await axios.delete("/users/" + id, {
         headers: {
-            token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDkyNzQ3MCwiZXhwIjoxNjgxMzU5NDcwfQ.v96uu-IDsFgAaJj8ehgxkiInna4mjE0RE4VCwfbA3nU",
+            authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MTA5NzExMywiZXhwIjoxNjgxNTI5MTEzfQ.EUhy3zBUmzQbWjEFsUMpFFbv3myFHp7im00nSIdiuDY",
         },
       });
       dispatch(deleteUsersSuccess(id));
@@ -74,7 +74,7 @@ import {
     try {
       const res = await axios.post("/auth/register", user, {
         headers: {
-            token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDkyNzQ3MCwiZXhwIjoxNjgxMzU5NDcwfQ.v96uu-IDsFgAaJj8ehgxkiInna4mjE0RE4VCwfbA3nU",
+            authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjk1NjE4MmEzMzA0MjJkYzcyNTEyMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MTA5NzExMywiZXhwIjoxNjgxNTI5MTEzfQ.EUhy3zBUmzQbWjEFsUMpFFbv3myFHp7im00nSIdiuDY",
         },
       });
       dispatch(createUsersSuccess(res.data));

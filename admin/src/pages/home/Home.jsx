@@ -32,7 +32,7 @@ export default function Home() {
         const res = await axios.get("/users/stats", {
           headers: {
             //test = account Hong Phong
-            token:
+            authorization:
               "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjQ0NWNiNDg3YjhmNTE2Nzk3ZTFjYSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2ODAwOTkwMzcsImV4cCI6MTY4MDUzMTAzN30.ift5_yW-q33sV6iikFib03T0VxnpluUPTOLGrzRmouo",
           },
         });
